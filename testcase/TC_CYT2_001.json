@@ -1,1 +1,21 @@
+{
+  "id": "TC_CYT2_001",
+  "defectid": "",
+  "project": {
+    "name": "Embedding API Index Validation",
+    "reported_by": "System",
+    "assigned_to": "Backend Team",
+    "issue_type": "Test Case",
+    "priority": "High",
+    "status": "Draft",
+    "description": "Validate that the /embedding API processes a blob from Azure Blob Storage, generates embeddings, and creates an index in Azure Cognitive Search."
+  },
+  "preconditions": [
+    "Azure Blob Storage contains valid JSON with Key_Value_Pairs, Tables, and Raw_Text.",
+    "CosmosDB connection string is correctly configured.",
+    "Index does not already exist."
+  ],
+  "expected_result": "Response is 'Indexing completed'. Index is created in Azure Cognitive Search. Blob and CosmosDB remain unchanged.",
+  "url": "https://raw.githubusercontent.com/Gayathiri-prog/Pro/main/testcase/TC_CYT2_001.json"
+}
 
